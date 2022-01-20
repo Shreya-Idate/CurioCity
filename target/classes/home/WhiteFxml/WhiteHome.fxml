@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.Controller">
+   <children>
+      <Pane layoutX="273.0" layoutY="2.0" prefHeight="37.0" prefWidth="1007.0" AnchorPane.bottomAnchor="526.0" AnchorPane.leftAnchor="273.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="back" layoutX="1.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="37.0" prefWidth="51.0" style="-fx-background-color: #ffffff;" stylesheets="@style.css" textFill="#fffffff7">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/left_arrow_26pxGreen.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="closebtn" layoutX="956.0" layoutY="1.0" mnemonicParsing="false" onAction="#close" prefHeight="37.0" prefWidth="37.0" style="-fx-background-color: 00000000;" stylesheets="@style.css" textFill="#00878f">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/multiply_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="maxbtn" layoutX="923.0" layoutY="-6.0" mnemonicParsing="false" onAction="#maximize" prefHeight="50.0" prefWidth="37.0" style="-fx-background-color: 0000;">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="29.0" layoutY="1080.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/maximize_window_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="minbtn" layoutX="887.0" layoutY="-1.0" mnemonicParsing="false" onAction="#minimize" prefHeight="37.0" prefWidth="37.0" style="-fx-background-color: 000000;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="32.0" layoutY="1080.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/subtract_26px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </Pane>
+      <Label alignment="TOP_CENTER" layoutX="557.0" layoutY="26.0" prefHeight="68.0" prefWidth="475.0" text="Navi Mumbai" AnchorPane.leftAnchor="557.0" AnchorPane.rightAnchor="248.0">
+         <font>
+            <Font name="Georgia Bold" size="43.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/city_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <VBox alignment="TOP_CENTER" prefHeight="532.0" prefWidth="274.0" style="-fx-background-color: #00878F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="212.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/img.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="46.0" prefWidth="252.0" stylesheets="@style.css" text="Home" textFill="#000000f7">
+               <graphic>
+                  <ImageView fx:id="imView1" fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/home_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="Georgia Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchToPartTimers" prefHeight="46.0" prefWidth="252.0" stylesheets="@style.css" text="Part Timers" textFill="#000000f7">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <graphic>
+                  <ImageView fx:id="imView111" fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/people_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchToTouristSpots" prefHeight="46.0" prefWidth="252.0" stylesheets="@style.css" text="Tourist Spots" textFill="#000000f7">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <graphic>
+                  <ImageView fx:id="imView112" fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/point_of_interest_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchToSmallBusinesses" prefHeight="46.0" prefWidth="252.0" stylesheets="@style.css" text="Small Businesses" textFill="#000000f7">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <graphic>
+                  <ImageView fx:id="imView113" fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/sell_stock_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <Label alignment="TOP_CENTER" layoutX="481.0" layoutY="94.0" text="News">
+         <font>
+            <Font name="Georgia Bold" size="30.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/news_26px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="878.0" layoutY="94.0" text="Achievement Board">
+         <font>
+            <Font name="Georgia Bold" size="30.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/certificate_30px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <ScrollPane layoutX="830.0" layoutY="144.0" prefHeight="384.0" prefWidth="425.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="457.0" prefWidth="410.0" style="-fx-background-color: #00878F;">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="356.0" text="Crystal Events-Event Manager" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+                     </graphic>
+                  </Label>
+                  <Label layoutY="47.0" prefHeight="27.0" prefWidth="356.0" text="Sales Manager" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+                     </graphic>
+                  </Label>
+                  <Label layoutY="94.0" prefHeight="27.0" prefWidth="356.0" text="Account Manager" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+                     </graphic>
+                  </Label>
+                  <Label layoutY="141.0" prefHeight="27.0" prefWidth="356.0" text="Namneet-Fashion Designer" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+                     </graphic>
+                  </Label>
+                  <Label layoutY="182.0" prefHeight="27.0" prefWidth="356.0" text="Youth encouraging Social Work" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+                     </graphic>
+                  </Label>
+                  <Label layoutY="229.0" prefHeight="27.0" prefWidth="356.0" text="Choreographer" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+                     </graphic>
+                  </Label>
+                  <Label layoutY="276.0" prefHeight="27.0" prefWidth="356.0" text="Noor by Navya" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+                     </graphic>
+                  </Label>
+                  <Label layoutY="323.0" prefHeight="27.0" prefWidth="356.0" text="Aspiring Actor" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+                     </graphic>
+                  </Label>
+                  <Label layoutY="370.0" prefHeight="27.0" prefWidth="356.0" text="Teacher" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane layoutX="345.0" layoutY="144.0" prefHeight="384.0" prefWidth="425.0" vbarPolicy="ALWAYS">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="410.0" style="-fx-background-color: #00878F;">
+               <children>
+                  <Label prefHeight="47.0" prefWidth="409.0" text="PG for boys/girls available starting at Rs.7000" textFill="#000000f9" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutY="60.0" prefHeight="27.0" prefWidth="356.0" text="Building collapsed,13 injured 2 died" textFill="#000000f9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="124.0" prefHeight="75.0" prefWidth="408.0" text="MNC hiring graduate freshers from batch 2021(starting salary Rs.25000/month)" textFill="#000000f9" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="-3.0" layoutY="191.0" prefHeight="94.0" prefWidth="425.0" text="Schools most likely to reopen from 3rd January 2022" textFill="#000000f9" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutY="293.0" prefHeight="27.0" prefWidth="356.0" text="Fire in Vaidehi Saree Shop, no-one injured" textFill="#000000f9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

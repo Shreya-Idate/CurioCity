@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="1000.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.SbTableController">
+   <children>
+      <Pane layoutX="267.0" prefHeight="37.0" prefWidth="734.0">
+         <children>
+            <Button fx:id="back" layoutX="1.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="37.0" prefWidth="51.0" style="-fx-background-color: #000000;" stylesheets="@style.css" textFill="#fffffff7">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/left_arrow_26pxGreen.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="closebtn" layoutX="683.0" layoutY="5.0" mnemonicParsing="false" onAction="#close" prefHeight="37.0" prefWidth="37.0" style="-fx-background-color: 00000000;" stylesheets="@style.css" textFill="#00878f">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/multiply_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="maxbtn" layoutX="650.0" layoutY="-2.0" mnemonicParsing="false" onAction="#maximize" prefHeight="50.0" prefWidth="37.0" style="-fx-background-color: 0000;">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="29.0" layoutY="1080.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/maximize_window_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="minbtn" layoutX="614.0" layoutY="3.0" mnemonicParsing="false" onAction="#minimize" prefHeight="37.0" prefWidth="37.0" style="-fx-background-color: 000000;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="32.0" layoutY="1080.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/subtract_26px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </Pane>
+      <VBox alignment="TOP_CENTER" layoutX="-6.0" prefHeight="532.0" prefWidth="274.0" style="-fx-background-color: #00878F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="212.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/img.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="46.0" prefWidth="252.0" stylesheets="@style.css" text="Home" textFill="#000000f7">
+               <graphic>
+                  <ImageView fx:id="imView1" fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/home_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="Georgia Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchToPartTimers" prefHeight="46.0" prefWidth="252.0" stylesheets="@style.css" text="Part Timers" textFill="#000000f7">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <graphic>
+                  <ImageView fx:id="imView111" fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/people_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchToTouristSpots" prefHeight="46.0" prefWidth="252.0" stylesheets="@style.css" text="Tourist Spots" textFill="#000000f7">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <graphic>
+                  <ImageView fx:id="imView112" fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/point_of_interest_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchToSmallBusinesses" prefHeight="46.0" prefWidth="252.0" stylesheets="@style.css" text="Small Businesses" textFill="#000000f7">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <graphic>
+                  <ImageView fx:id="imView113" fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/sell_stock_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="419.0" layoutY="37.0" prefWidth="454.0" text="Small Businesses" textFill="#45ccd3">
+         <font>
+            <Font name="Georgia Bold" size="43.0" />
+         </font>
+      </Label>
+      <VBox layoutX="566.0" layoutY="179.0" prefHeight="273.0" prefWidth="420.0">
+         <children>
+            <TableView fx:id="sbTable" editable="true" prefHeight="241.0" prefWidth="483.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" styleClass="scroll-bar" stylesheets="@StyleTable.css" tableMenuButtonVisible="true" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="344.0" fitWidth="340.0" layoutX="226.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/2670_R0lVIERBTiA1NzktMzA-ai-removebg-preview%20(2).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

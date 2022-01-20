@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="1000.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.Controller">
+   <children>
+      <Pane layoutX="273.0" layoutY="2.0" prefHeight="37.0" prefWidth="1007.0" AnchorPane.bottomAnchor="526.0" AnchorPane.leftAnchor="273.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="back" layoutX="1.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="37.0" prefWidth="51.0" style="-fx-background-color: #000000;" stylesheets="@style.css" textFill="#fffffff7">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/left_arrow_26pxGreen.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="closebtn" layoutX="676.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" prefHeight="37.0" prefWidth="37.0" style="-fx-background-color: 00000000;" stylesheets="@style.css" textFill="#00878f">
+               <font>
+                  <Font name="Serif Regular" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/multiply_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="maxbtn" layoutX="643.0" layoutY="-5.0" mnemonicParsing="false" onAction="#maximize" prefHeight="50.0" prefWidth="37.0" style="-fx-background-color: 0000;">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="29.0" layoutY="1080.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/maximize_window_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="minbtn" layoutX="607.0" mnemonicParsing="false" onAction="#minimize" prefHeight="37.0" prefWidth="37.0" style="-fx-background-color: 000000;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="32.0" layoutY="1080.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/subtract_26px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </Pane>
+      <Label alignment="TOP_CENTER" layoutX="412.0" layoutY="26.0" prefHeight="68.0" prefWidth="399.0" text="Navi Mumbai" textFill="#45ccd3" AnchorPane.leftAnchor="412.0" AnchorPane.rightAnchor="189.0">
+         <font>
+            <Font name="Georgia Bold" size="43.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/city_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <VBox alignment="TOP_CENTER" prefHeight="532.0" prefWidth="274.0" style="-fx-background-color: #00878F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="212.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/img.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="46.0" prefWidth="252.0" stylesheets="@style.css" text="Home" textFill="#000000f7">
+               <graphic>
+                  <ImageView fx:id="imView1" fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/home_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <font>
+                  <Font name="Georgia Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchToPartTimers" prefHeight="46.0" prefWidth="252.0" stylesheets="@style.css" text="Part Timers" textFill="#000000f7">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <graphic>
+                  <ImageView fx:id="imView111" fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/people_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchToTouristSpots" prefHeight="46.0" prefWidth="252.0" stylesheets="@style.css" text="Tourist Spots" textFill="#000000f7">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <graphic>
+                  <ImageView fx:id="imView112" fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/point_of_interest_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#switchToSmallBusinesses" prefHeight="46.0" prefWidth="252.0" stylesheets="@style.css" text="Small Businesses" textFill="#000000f7">
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <graphic>
+                  <ImageView fx:id="imView113" fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/sell_stock_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <Label alignment="TOP_CENTER" layoutX="392.0" layoutY="101.0" text="News" textFill="#45ccd3">
+         <font>
+            <Font name="Georgia Bold" size="30.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/news_26px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="634.0" layoutY="101.0" text="Achievement Board" textFill="#45ccd3">
+         <font>
+            <Font name="Georgia Bold" size="30.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/certificate_30px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <ScrollPane layoutX="297.0" layoutY="144.0" prefHeight="368.0" prefWidth="314.0" style="-fx-background-color: #000000; -fx-background-radius: 10; -fx-border-color: #000000; -fx-border-radius: 10;" styleClass="scroll-bar" stylesheets="@StyleSP.css">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="478.0" prefWidth="298.0" style="-fx-background-color: #00878F;">
+               <children>
+                  <Label prefHeight="80.0" prefWidth="298.0" text="PG for boys/girls available starting at Rs.7000" textFill="#000000f9" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="-1.0" layoutY="62.0" prefHeight="75.0" prefWidth="298.0" text="Building collapsed,13 injured 2 died" textFill="#000000f9" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="131.0" prefHeight="102.0" prefWidth="295.0" text="MNC hiring graduate freshers from batch 2021(starting salary Rs.25000/month)" textFill="#000000f9" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="-3.0" layoutY="223.0" prefHeight="107.0" prefWidth="302.0" text="Housing colony slaps Rs 8 lakh fine on resident for feeding stray dogs inside premisees." textFill="#000000f9" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="-2.0" layoutY="321.0" prefHeight="75.0" prefWidth="300.0" text="Schools most likely to reopen from 3rd January 2022" textFill="#000000f9" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="-2.0" layoutY="389.0" prefHeight="75.0" prefWidth="300.0" text="Fire in Vaidehi Saree Shop, no-one injured" textFill="#000000f9" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="632.0" layoutY="144.0" prefHeight="368.0" prefWidth="358.0" style="-fx-background-color: #000000;" stylesheets="@StyleSP.css">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1011.0" prefWidth="344.0" style="-fx-background-color: #00878F;">
+               <children>
+                  <Label prefHeight="83.0" prefWidth="346.0" text="Crystal Events honoured with the &quot;Band Baja Baarat&quot;title" textFill="#000000fc" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="69.0" prefHeight="29.0" prefWidth="337.0" text="Event outsourcing company,exclusively for weddings" />
+                  <Label layoutX="-1.0" layoutY="98.0" prefHeight="47.0" prefWidth="346.0" text="2021 Champion Sales Manager" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="193.0" prefHeight="47.0" prefWidth="346.0" text="Account Manager of the year" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="2.0" layoutY="272.0" prefHeight="86.0" prefWidth="346.0" text="Namneet-Fashion designs outfit for MISS INDIA" textFill="#000000fc" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="-1.0" layoutY="373.0" prefHeight="47.0" prefWidth="346.0" text="Youth encouraging Social Work" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="2.0" layoutY="443.0" prefHeight="77.0" prefWidth="346.0" text="A journey from being a college dropout to a reality show judge" textFill="#000000fc" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="553.0" prefHeight="74.0" prefWidth="346.0" text="NoorbyNavya designes jewellery for Rupali Ganguly" textFill="#000000fc" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="-3.0" layoutY="666.0" prefHeight="47.0" prefWidth="340.0" text="Aspiring Actor" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="-3.0" layoutY="743.0" prefHeight="47.0" prefWidth="339.0" text="Setting an Example for Humanity" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="132.0" prefHeight="61.0" prefWidth="337.0" text="Delivered 110% to 2020 sales target(achieved result)by developing a new to company strategy to target the underdeveloped market" wrapText="true" />
+                  <Label layoutX="10.0" layoutY="226.0" prefHeight="46.0" prefWidth="337.0" text="Two years consecutively one of the highest 5-growth accounts in company resulting in company growth and opportunities" wrapText="true" />
+                  <Label layoutX="10.0" layoutY="335.0" prefHeight="46.0" prefWidth="337.0" text="Designed outfits for some of the biggest pagent shows" wrapText="true" />
+                  <Label layoutX="10.0" layoutY="411.0" prefHeight="46.0" prefWidth="337.0" text="A 21 year old has managed to open one of the biggest animal shelters in his area" wrapText="true" />
+                  <Label layoutX="9.0" layoutY="507.0" prefHeight="46.0" prefWidth="337.0" text="Started his journey from a small dance school to being a judge of a reality show" wrapText="true" />
+                  <Label layoutX="9.0" layoutY="608.0" prefHeight="68.0" prefWidth="337.0" text="A very successful and most blooming jewellery designer in the world of designing.Started a brand at very young age, designs unique and trendy jewellery" wrapText="true" />
+                  <Label layoutX="8.0" layoutY="704.0" prefHeight="46.0" prefWidth="332.0" text="From a hardworking newspaper seller to an actor in Mollywood" wrapText="true" />
+                  <Label layoutX="4.0" layoutY="777.0" prefHeight="46.0" prefWidth="337.0" text="A retired high school teacher provides free education to under-priviledged childern on weekends." wrapText="true" />
+                  <Label layoutX="3.0" layoutY="823.0" prefHeight="47.0" prefWidth="339.0" text="Gold Medalist-District Level" textFill="#000000fc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="857.0" prefHeight="46.0" prefWidth="337.0" text="A person currently working as a karate coach has been awarded two gold medals in district level" wrapText="true" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
